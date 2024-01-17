@@ -31,34 +31,21 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
+
     <main>
       <div class="main-background"></div>
       <h1 class="main-title">Stay updated!</h1>
       <p class="main-intro">
-        Join
-        <span aria-label="60000 plus" role="text">60&thinsp;000+</span> product
-        managers receiving monthly updates on:
+        Join <span aria-label="60000 plus" role="text">60&thinsp;000+</span> product managers receiving monthly updates on:
       </p>
-      <ul class="main-features">
-        <li class="main-features-feature">
+      <ul role="list" class="main-features">
+        <li role="listitem" class="main-features-feature">
           Product discovery and building what matters
         </li>
-        <li class="main-features-feature">
+        <li role="listitem" class="main-features-feature">
           Measuring to ensure updates are a success
         </li>
-        <li class="main-features-feature">And much more!</li>
+        <li role="listitem" class="main-features-feature">And much more!</li>
       </ul>
       <form action="#" class="main-form">
         <label for="main-form-email" class="main-form-label"
@@ -67,10 +54,12 @@
         <input
           type="email"
           name="email"
+          placeholder="email@company.com"
           id="main-form-email"
           class="main-form-input-email"
         />
         <button
+        class="form-submit"
           type="submit"
           aria-label="Submit form for newsletter subscription"
         >
@@ -78,11 +67,5 @@
         </button>
       </form>
     </main>
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Benedict Foo</a>.
-    </footer>
   </body>
 </html>

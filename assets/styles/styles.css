@@ -1,0 +1,79 @@
+/* Body */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.3;
+}
+:root {
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --white: hsl(0, 0%, 100%);
+}
+/* Main */
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Main Background */
+.main-background {
+  height: 35vh;
+  background-image: url("../images/illustration-sign-up-mobile.svg");
+}
+
+/*Background Image for desktop/tablet  */
+@media screen and (min-width: 767) {
+  .main-background {
+    background-image: url("../images/illustration-sign-up-desktop.svg");
+  }
+}
+
+/* Padding for 2nd child and onwards  */
+main > :nth-child(n + 1) {
+  --padding: 20px;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
+/* Main Intro Paragraph */
+.main-intro span {
+  padding: 0;
+}
+/* Main Features */
+.main-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+.main-features .main-features-feature {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 3rem;
+}
+.main-features-feature::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: url("../images/icon-list.svg");
+}
+/* Main form */
+.main-form-label {
+  font-weight: 700;
+  font-size: 0.7rem;
+  display: block;
+  margin-bottom: 5px;
+}
+.main-form-input-email {
+  padding: 12px 0;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.form-submit {
+  width: 100%;
+  padding: 12px 30px;
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+}
