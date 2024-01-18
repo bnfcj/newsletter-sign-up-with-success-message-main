@@ -88,8 +88,32 @@ main {
 .main-form > * {
   margin-bottom: 10px;
 }
-.main-form-label {
-  display: block;
+.label-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+mark.email-error {
+  display: none;
+  background-color: transparent;
+  color: red;
+}
+/* Success IMAGE and article*/
+.success-image {
+  display: inline-block;
+  height: 10vh;
+  width: 10vh;
+}
+.success-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 20px;
+}
+.success-article .main-title {
+  text-align: center;
 }
 /* Utility Classes */
 .text-left {

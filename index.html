@@ -60,10 +60,13 @@
           </li>
           <li role="listitem" class="main-features-feature">And much more!</li>
         </ul>
-        <form action="#" class="main-form">
-          <label for="main-form-email" class="main-form-label"
-            >Email Address</label
-          >
+        <form action="#" class="main-form" novalidate>
+          <div class="label-container">
+            <label for="main-form-email" class="main-form-label"
+              >Email Address</label
+            >
+            <mark class="email-error">Valid email required</mark>
+          </div>
           <input
             type="email"
             name="email"
