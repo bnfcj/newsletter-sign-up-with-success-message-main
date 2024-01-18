@@ -106,18 +106,27 @@ mark.email-error {
 }
 .success-article {
   display: flex;
+  position: relative;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   height: 100vh;
   gap: 20px;
 }
-.success-article .main-title {
-  text-align: center;
+.success-article .hover-active-btn {
+  position: absolute;
+
+  bottom: 15px;
+
+  width: calc(100% - 30px);
 }
+
 /* Utility Classes */
 .text-left {
   text-align: left;
+}
+.text-center {
+  text-align: center;
 }
 .rectangle {
   padding: 14px;
@@ -149,6 +158,27 @@ mark.email-error {
   p {
     font-size: 1.5rem;
   }
+  .success-article {
+    height: auto;
+    padding: 0;
+  }
+
+  .success-article .hover-active-btn {
+    margin-top: 0;
+    position: static;
+  }
+  .success-article p {
+    font-size: 1rem;
+  }
+  .success-article h1 {
+    font-size: 2.5rem;
+  }
+  .success-main {
+    grid-template-columns: 1fr;
+    border-radius: 20px;
+    width: max(30%, 400px);
+  }
+
   main {
     max-width: min(100vw, 700px);
     grid-template-columns: 1fr 1fr;

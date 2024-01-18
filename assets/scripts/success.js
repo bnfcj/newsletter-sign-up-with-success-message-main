@@ -3,5 +3,5 @@ const textValue = urlParams.get("text");
 if (textValue)
   document.querySelector(
     ".success-message"
-  ).textContent = `A confirmation email has been sent to '${textValue}'. Please
+  ).innerHTML = `A confirmation email has been sent to <strong>${textValue}</strong>. Please
 open it and click the button inside to confirm your subscription`;
