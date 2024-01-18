@@ -2,10 +2,12 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.3;
+  height: 100vh;
 }
 :root {
   --dark-slate-grey: hsl(234, 29%, 20%);
   --white: hsl(0, 0%, 100%);
+  --charcoal-grey: hsl(235, 18%, 26%);
 }
 *,
 h1,
@@ -13,87 +15,4 @@ h2 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-/* Main */
-main {
-  height: 100vh;
-  padding: 20px;
-  flex-direction: column;
-}
-
-/* Main Background */
-
-/*Background Image for desktop/tablet  */
-@media screen and (min-width: 767px) {
-  main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .decorative-image {
-    order: 1;
-    flex-shrink: 1;
-  }
-  .article {
-    /* flex-grow: 1; */
-  }
-}
-
-/* Padding for 2nd child and onwards  */
-.article {
-  --padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  /* padding-left: var(--padding);
-  padding-right: var(--padding); */
-}
-
-/* Main Intro Paragraph */
-.main-intro span {
-  padding: 0;
-}
-/* Main Features */
-.main-features {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.main-features .main-features-feature {
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 3rem;
-}
-.main-features-feature::before {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  content: url("../images/icon-list.svg");
-}
-/* Main form */
-.main-form {
-  padding: 5px;
-}
-.main-form-label {
-  font-weight: 700;
-  font-size: 0.7rem;
-  display: block;
-  margin-bottom: 5px;
-}
-.main-form-input-email {
-  box-sizing: border-box;
-  width: 70%;
-  padding: 12px 0;
-  padding-left: 30px;
-  margin-bottom: 10px;
-}
-.form-submit {
-  width: 70%;
-  padding: 12px 30px;
-  background-color: var(--dark-slate-grey);
-  color: var(--white);
 }
