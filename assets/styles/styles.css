@@ -2,7 +2,7 @@
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.3;
-  background-color: var(--charcoal-grey);
+  /* background-color: var(--charcoal-grey); */
 }
 :root {
   --dark-slate-grey: hsl(234, 29%, 20%);
@@ -13,8 +13,35 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+/* Font Size */
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+/* Main */
+main {
+  display: grid;
+  min-height: 100vh;
 }
