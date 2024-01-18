@@ -6,6 +6,11 @@ document.querySelector(".main-form").addEventListener("submit", function (e) {
     window.location.href =
       "https://bnfcj.github.io/newsletter-sign-up-with-success-message-main/success.html?text=" +
       emailElement.value;
+  else {
+    if (!emailElement.classList.contains("error-input")) {
+      emailElement.classList.toggle("error-input");
+    }
+  }
 });
 const emailElement = document.querySelector(".main-form-input-email");
 const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
