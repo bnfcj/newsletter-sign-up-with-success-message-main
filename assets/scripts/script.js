@@ -27,5 +27,6 @@ document.querySelector(".main-form").addEventListener("submit", function (e) {
     if (!emailElement.classList.contains("error-input")) {
       emailElement.classList.toggle("error-input");
     }
+    emailElement.focus();
   }
 });
