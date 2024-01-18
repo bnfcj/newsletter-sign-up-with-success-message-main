@@ -102,6 +102,7 @@ mark.email-error {
 .error-input {
   color: var(--tomato);
   background-color: var(--tomato-translucent);
+  border-color: var(--tomato);
 }
 .error-input:focus {
   outline-color: var(--tomato);
