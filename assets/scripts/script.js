@@ -8,12 +8,16 @@ document.querySelector(".main-form").addEventListener("submit", function (e) {
 const emailElement = document.querySelector(".main-form-input-email");
 const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 const errorElement = document.querySelector(".email-error");
-document
-  .querySelector(".main-form-input-email")
-  .addEventListener("keyup", function () {
-    if (emailRegex.test(emailElement.value)) {
-      errorElement.style.display = "none";
-    } else {
-      errorElement.style.display = "inline";
+emailElement.addEventListener("keyup", function () {
+  if (emailRegex.test(emailElement.value)) {
+    errorElement.style.display = "none";
+    if (emailElement.classList.contains("error-input")) {
+      emailElement.classList.toggle("error-input");
     }
-  });
+  } else {
+    errorElement.style.display = "inline";
+    if (!emailElement.classList.contains("error-input")) {
+      emailElement.classList.toggle("error-input");
+    }
+  }
+});

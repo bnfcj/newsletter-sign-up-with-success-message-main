@@ -14,6 +14,7 @@ body {
   --white: hsl(0, 0%, 100%);
   --charcoal-grey: hsl(235, 18%, 26%);
   --tomato: hsl(4, 100%, 67%);
+  --tomato-translucent: hsla(4, 100%, 67%, 0.2);
 }
 *,
 h1,
@@ -96,7 +97,14 @@ main {
 mark.email-error {
   display: none;
   background-color: transparent;
-  color: red;
+  color: var(--tomato);
+}
+.error-input {
+  color: var(--tomato);
+  background-color: var(--tomato-translucent);
+}
+.error-input:focus {
+  outline-color: var(--tomato);
 }
 /* Success IMAGE and article*/
 .success-image {
