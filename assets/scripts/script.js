@@ -3,7 +3,7 @@
 document.querySelector(".main-form").addEventListener("submit", function (e) {
   e.preventDefault();
   if (emailRegex.test(emailElement.value))
-    window.location.href = "../success.html?text=" + emailElement.value;
+    window.location.href += "/success.html?text=" + emailElement.value;
 });
 const emailElement = document.querySelector(".main-form-input-email");
 const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
