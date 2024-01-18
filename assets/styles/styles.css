@@ -48,6 +48,15 @@ main {
 .decorative-image-2 {
   display: none;
 }
+/* Article */
+.article {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.main-features {
+}
 /* Media Queries */
 @media screen and (min-width: 768px) {
   h1 {
@@ -60,7 +69,7 @@ main {
     font-size: 1.5rem;
   }
   main {
-    max-width: 60vw;
+    max-width: min(100vw, 700px);
     grid-template-columns: 1fr 1fr;
     padding: 30px;
     align-items: center;
