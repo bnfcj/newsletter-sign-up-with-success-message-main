@@ -23,6 +23,7 @@ document.querySelector(".main-form").addEventListener("submit", function (e) {
       "https://bnfcj.github.io/newsletter-sign-up-with-success-message-main/success.html?text=" +
       emailElement.value;
   else {
+    errorElement.style.display = "inline";
     if (!emailElement.classList.contains("error-input")) {
       emailElement.classList.toggle("error-input");
     }
