@@ -111,6 +111,7 @@ mark.email-error {
   display: inline-block;
   height: 10vh;
   width: 10vh;
+  align-self: start;
 }
 .success-article {
   display: flex;
