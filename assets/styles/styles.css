@@ -200,13 +200,6 @@ mark.email-error {
   color: var(--white);
 }
 
-.hover-active-btn:hover,
-.hover-active-btn:focus {
-  background-color: var(--dark-slate-grey-lighter);
-}
-.hover-active-btn:active {
-  background-color: var(--tomato);
-}
 /* Media Queries */
 @media screen and (min-width: 768px) {
   h1 {
@@ -280,5 +273,14 @@ mark.email-error {
 @media screen and (min-width: 768px) and (min-height: 560px) {
   main {
     border-radius: 20px;
+  }
+}
+@media (hover: hover) {
+  .hover-active-btn:hover,
+  .hover-active-btn:focus {
+    background-color: var(--dark-slate-grey-lighter);
+  }
+  .hover-active-btn:active {
+    background-color: var(--tomato);
   }
 }
