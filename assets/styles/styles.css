@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Body, root and default*/
 body {
   font-family: "Roboto", sans-serif;
@@ -15,7 +22,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 100dvh;
+  min-height: 100svh;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -56,7 +63,7 @@ main {
   display: -ms-grid;
   display: grid;
   /* height: 100vh; */
-  min-height: 100dvh;
+  min-height: 100svh;
   -ms-grid-rows: auto 1fr;
   grid-template-rows: auto 1fr;
 
@@ -66,7 +73,7 @@ main {
 /* Decorative Image */
 .decorative-image-1 {
   display: inline;
-  height: clamp(250px, 40dvh, 250px);
+  height: clamp(250px, 40svh, 250px);
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -142,8 +149,8 @@ mark.email-error {
 /* Success IMAGE and article*/
 .success-image {
   display: inline-block;
-  height: 10dvh;
-  width: 10dvh;
+  height: 10svh;
+  width: 10svh;
   -ms-flex-item-align: start;
   -ms-grid-row-align: start;
   align-self: start;
@@ -163,7 +170,7 @@ mark.email-error {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100dvh;
+  height: 100svh;
   gap: 20px;
 }
 .success-article .hover-active-btn {
@@ -234,7 +241,7 @@ mark.email-error {
   }
 
   main {
-    max-width: min(100dvw, 700px);
+    max-width: min(100svw, 700px);
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     padding: 30px;
